@@ -1,0 +1,41 @@
+#coding:gbk 
+#!/usr/bin/python
+#
+#2011_01_11_17:20:53 add by greshem
+import re;
+import os;
+import time;
+#root_pat=re.compile('root');
+
+"""返回当前 CPU 的 total 和 idle 时间片计数 
+"""
+def get_cpu_usage():
+	root_pat=re.compile('^cpu');
+	fh=open("/proc/stat");
+	#注意 fh.readlines readline 的区别. 
+	for line in fh.readlines():
+		match=root_pat.match(line)
+		if match: 
+			#print line
+			break;
+
+	stats=line.split();
+	#注意: 这里 这里  + 变成字符串 的  strcat.
+	total=int(stats[1]) + int(stats[2])+int(stats[3]) +int(stats[4]);
+	idle=stats[4]; 
+	return (total, idle);
+
+while 1:
+	total1,idle1=get_cpu_usage();
+	time.sleep(5);
+	total2,idle2=get_cpu_usage();
+
+	total=int(int(total2)-int(total1));
+	idle= int(int(idle2) -int(idle1));
+
+	print "total  ",total, "idle ", idle;
+	per = 100*(total -idle ) /total;
+	print "cpu占用率", per;
+
+
+

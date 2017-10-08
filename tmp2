@@ -1,0 +1,2154 @@
+[Module: numpy]
+
+     +Class: ComplexWarning
+         (No members)
+
+     +Class: DataSource
+         +Method: _iswritemode
+         	_iswritemode is an instance method
+         	-Method Arguments: ['mode']
+
+         +Method: _isurl
+         	_isurl is an instance method
+         	-Method Arguments: ['path']
+
+         +Method: _findfile
+         	_findfile is an instance method
+         	-Method Arguments: ['path']
+
+         +Method: exists
+         	exists is an instance method
+         	-Method Arguments: ['path']
+
+         +Method: __del__
+         	__del__ is an instance method
+         	-Method Arguments: []
+
+         +Method: abspath
+         	abspath is an instance method
+         	-Method Arguments: ['path']
+
+         +Method: _possible_names
+         	_possible_names is an instance method
+         	-Method Arguments: ['filename']
+
+         +Method: _iszip
+         	_iszip is an instance method
+         	-Method Arguments: ['filename']
+
+         +Method: _splitzipext
+         	_splitzipext is an instance method
+         	-Method Arguments: ['filename']
+
+         +Method: _cache
+         	_cache is an instance method
+         	-Method Arguments: ['path']
+
+         +Method: _sanitize_relative_path
+         	_sanitize_relative_path is an instance method
+         	-Method Arguments: ['path']
+
+         +Method: open
+         	open is an instance method
+         	-Method Arguments: ['path', 'mode']
+         	--Default arguments: [('mode', 'r')]
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['destpath']
+         	--Default arguments: [('destpath', '.')]
+
+
+     +Class: MachAr
+         +Method: _do_init
+         	_do_init is an instance method
+         	-Method Arguments: ['float_conv', 'int_conv', 'float_to_float', 'float_to_str', 'title']
+
+         +Method: __str__
+         	__str__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['float_conv', 'int_conv', 'float_to_float', 'float_to_str', 'title']
+         	--Default arguments: [('float_conv', <type 'float'>), ('int_conv', <type 'int'>), ('float_to_float', <type 'float'>), ('float_to_str', <function <lambda> at 0x7f7642b50ed8>), ('title', 'Python floating point number')]
+
+
+     +Class: PackageLoader
+         +Method: _obj2repr
+         	_obj2repr is an instance method
+         	-Method Arguments: ['obj']
+
+         +Method: _get_info_files
+         	_get_info_files is an instance method
+         	-Method Arguments: ['package_dir', 'parent_path', 'parent_package']
+         	--Default arguments: [('parent_package', None)]
+
+         +Method: log
+         	log is an instance method
+         	-Method Arguments: ['mess']
+
+         +Method: _get_sorted_names
+         	_get_sorted_names is an instance method
+         	-Method Arguments: []
+
+         +Method: _format_titles
+         	_format_titles is an instance method
+         	-Method Arguments: ['titles', 'colsep']
+         	--Default arguments: [('colsep', '---')]
+
+         +Method: get_pkgdocs
+         	get_pkgdocs is an instance method
+         	-Method Arguments: []
+
+         +Method: warn
+         	warn is an instance method
+         	-Method Arguments: ['mess']
+
+         +Method: _init_info_modules
+         	_init_info_modules is an instance method
+         	-Method Arguments: ['packages']
+         	--Default arguments: [('packages', None)]
+
+         +Method: error
+         	error is an instance method
+         	-Method Arguments: ['mess']
+
+         +Method: __call__
+         	__call__ is an instance method
+         	-Method Arguments: []
+         	-Positional Args Param: packages
+         	-Keyword Args Param: options
+
+         +Method: _execcmd
+         	_execcmd is an instance method
+         	-Method Arguments: ['cmdstr']
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['verbose', 'infunc']
+         	--Default arguments: [('verbose', False), ('infunc', False)]
+
+         +Method: _get_doc_title
+         	_get_doc_title is an instance method
+         	-Method Arguments: ['info_module']
+
+
+     +Class: RankWarning
+         (No members)
+
+     +Class: NoseTester
+         +Method: bench
+         	bench is an instance method
+         	-Method Arguments: ['label', 'verbose', 'extra_argv']
+         	--Default arguments: [('label', 'fast'), ('verbose', 1), ('extra_argv', None)]
+
+         +Method: _get_custom_doctester
+         	_get_custom_doctester is an instance method
+         	-Method Arguments: []
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['package', 'raise_warnings']
+         	--Default arguments: [('package', None), ('raise_warnings', 'release')]
+
+         +Method: test
+         	test is an instance method
+         	-Method Arguments: ['label', 'verbose', 'extra_argv', 'doctests', 'coverage', 'raise_warnings']
+         	--Default arguments: [('label', 'fast'), ('verbose', 1), ('extra_argv', None), ('doctests', False), ('coverage', False), ('raise_warnings', None)]
+
+         +Method: _test_argv
+         	_test_argv is an instance method
+         	-Method Arguments: ['label', 'verbose', 'extra_argv']
+
+         +Method: prepare_test_args
+         	prepare_test_args is an instance method
+         	-Method Arguments: ['label', 'verbose', 'extra_argv', 'doctests', 'coverage']
+         	--Default arguments: [('label', 'fast'), ('verbose', 1), ('extra_argv', None), ('doctests', False), ('coverage', False)]
+
+         +Method: _show_system_info
+         	_show_system_info is an instance method
+         	-Method Arguments: []
+
+
+     +Built-in Function: add_docstring
+     	-Method Arguments: obj, docstring
+
+     +Function: add_newdoc
+     	-Method Arguments: ['place', 'obj', 'doc']
+
+     +Built-in Function: add_newdoc_ufunc
+     	-Method Arguments: ufunc, new_docstring
+
+     +Function: alen
+     	-Method Arguments: ['a']
+
+     +Function: all
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Function: allclose
+     	-Method Arguments: ['a', 'b', 'rtol', 'atol']
+     	--Default arguments: [('rtol', 1e-05), ('atol', 1e-08)]
+
+     +Function: alltrue
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Built-in Function: alterdot
+     	-Method Arguments: None
+
+     +Function: amax
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Function: amin
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Function: angle
+     	-Method Arguments: ['z', 'deg']
+     	--Default arguments: [('deg', 0)]
+
+     +Function: any
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Function: append
+     	-Method Arguments: ['arr', 'values', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: apply_along_axis
+     	-Method Arguments: ['func1d', 'axis', 'arr']
+     	-Positional Args Param: args
+
+     +Function: apply_over_axes
+     	-Method Arguments: ['func', 'a', 'axes']
+
+     +Built-in Function: arange
+     	-Method Arguments: [start,] stop[, step,], dtype=None
+
+     +Function: argmax
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: argmin
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: argsort
+     	-Method Arguments: ['a', 'axis', 'kind', 'order']
+     	--Default arguments: [('axis', -1), ('kind', 'quicksort'), ('order', None)]
+
+     +Function: argwhere
+     	-Method Arguments: ['a']
+
+     +Function: around
+     	-Method Arguments: ['a', 'decimals', 'out']
+     	--Default arguments: [('decimals', 0), ('out', None)]
+
+     +Built-in Function: array
+     	-Method Arguments: object, dtype=None, copy=True, order=None, subok=False, ndmin=0
+
+     +Function: array2string
+     	-Method Arguments: ['a', 'max_line_width', 'precision', 'suppress_small', 'separator', 'prefix', 'style', 'formatter']
+     	--Default arguments: [('max_line_width', None), ('precision', None), ('suppress_small', None), ('separator', ' '), ('prefix', ''), ('style', <built-in function repr>), ('formatter', None)]
+
+     +Function: array_equal
+     	-Method Arguments: ['a1', 'a2']
+
+     +Function: array_equiv
+     	-Method Arguments: ['a1', 'a2']
+
+     +Function: array_repr
+     	-Method Arguments: ['arr', 'max_line_width', 'precision', 'suppress_small']
+     	--Default arguments: [('max_line_width', None), ('precision', None), ('suppress_small', None)]
+
+     +Function: array_split
+     	-Method Arguments: ['ary', 'indices_or_sections', 'axis']
+     	--Default arguments: [('axis', 0)]
+
+     +Function: array_str
+     	-Method Arguments: ['a', 'max_line_width', 'precision', 'suppress_small']
+     	--Default arguments: [('max_line_width', None), ('precision', None), ('suppress_small', None)]
+
+     +Function: asanyarray
+     	-Method Arguments: ['a', 'dtype', 'order']
+     	--Default arguments: [('dtype', None), ('order', None)]
+
+     +Function: asarray
+     	-Method Arguments: ['a', 'dtype', 'order']
+     	--Default arguments: [('dtype', None), ('order', None)]
+
+     +Function: asarray_chkfinite
+     	-Method Arguments: ['a', 'dtype', 'order']
+     	--Default arguments: [('dtype', None), ('order', None)]
+
+     +Function: ascontiguousarray
+     	-Method Arguments: ['a', 'dtype']
+     	--Default arguments: [('dtype', None)]
+
+     +Function: asfarray
+     	-Method Arguments: ['a', 'dtype']
+     	--Default arguments: [('dtype', <type 'numpy.float64'>)]
+
+     +Function: asfortranarray
+     	-Method Arguments: ['a', 'dtype']
+     	--Default arguments: [('dtype', None)]
+
+     +Function: asmatrix
+     	-Method Arguments: ['data', 'dtype']
+     	--Default arguments: [('dtype', None)]
+
+     +Function: asscalar
+     	-Method Arguments: ['a']
+
+     +Function: atleast_1d
+     	-Positional Args Param: arys
+
+     +Function: atleast_2d
+     	-Positional Args Param: arys
+
+     +Function: atleast_3d
+     	-Positional Args Param: arys
+
+     +Function: average
+     	-Method Arguments: ['a', 'axis', 'weights', 'returned']
+     	--Default arguments: [('axis', None), ('weights', None), ('returned', False)]
+
+     +Function: bartlett
+     	-Method Arguments: ['M']
+
+     +Function: base_repr
+     	-Method Arguments: ['number', 'base', 'padding']
+     	--Default arguments: [('base', 2), ('padding', 0)]
+
+     +Function: bench
+     	bench is an instance method
+     	-Method Arguments: ['label', 'verbose', 'extra_argv']
+     	--Default arguments: [('label', 'fast'), ('verbose', 1), ('extra_argv', None)]
+
+     +Function: binary_repr
+     	-Method Arguments: ['num', 'width']
+     	--Default arguments: [('width', None)]
+
+     +Built-in Function: bincount
+     	-Method Arguments: x, weights=None, minlength=None
+
+     +Function: blackman
+     	-Method Arguments: ['M']
+
+     +Function: bmat
+     	-Method Arguments: ['obj', 'ldict', 'gdict']
+     	--Default arguments: [('ldict', None), ('gdict', None)]
+
+     +Class: bool
+         (No members)
+
+     +Class: bool_
+         (No members)
+
+     +Class: bool_
+         (No members)
+
+     +Class: broadcast
+         (No members)
+
+     +Function: broadcast_arrays
+     	-Positional Args Param: args
+
+     +Built-in Function: busday_count
+     	-Method Arguments: begindates, enddates, weekmask='1111100', holidays=[], busdaycal=None, out=None
+
+     +Built-in Function: busday_offset
+     	-Method Arguments: dates, offsets, roll='raise', weekmask='1111100', holidays=None, busdaycal=None, out=None
+
+     +Class: busdaycalendar
+         (No members)
+
+     +Class: int8
+         (No members)
+
+     +Function: byte_bounds
+     	-Method Arguments: ['a']
+
+     +Class: string_
+         (No members)
+
+     +Built-in Function: can_cast
+     	-Method Arguments: from, totype, casting = 'safe'
+
+     +Class: complex128
+         (No members)
+
+     +Class: complex128
+         (No members)
+
+     +Class: character
+         (No members)
+
+     +Class: chararray
+         +Method: upper
+         	upper is an instance method
+         	-Method Arguments: []
+
+         +Method: __ne__
+         	__ne__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: lstrip
+         	lstrip is an instance method
+         	-Method Arguments: ['chars']
+         	--Default arguments: [('chars', None)]
+
+         +Method: capitalize
+         	capitalize is an instance method
+         	-Method Arguments: []
+
+         +Method: rpartition
+         	rpartition is an instance method
+         	-Method Arguments: ['sep']
+
+         +Method: __radd__
+         	__radd__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __rmul__
+         	__rmul__ is an instance method
+         	-Method Arguments: ['i']
+
+         +Method: endswith
+         	endswith is an instance method
+         	-Method Arguments: ['suffix', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: splitlines
+         	splitlines is an instance method
+         	-Method Arguments: ['keepends']
+         	--Default arguments: [('keepends', None)]
+
+         +Method: expandtabs
+         	expandtabs is an instance method
+         	-Method Arguments: ['tabsize']
+         	--Default arguments: [('tabsize', 8)]
+
+         +Method: strip
+         	strip is an instance method
+         	-Method Arguments: ['chars']
+         	--Default arguments: [('chars', None)]
+
+         +Method: isdigit
+         	isdigit is an instance method
+         	-Method Arguments: []
+
+         +Method: __rmod__
+         	__rmod__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: ljust
+         	ljust is an instance method
+         	-Method Arguments: ['width', 'fillchar']
+         	--Default arguments: [('fillchar', ' ')]
+
+         +Method: isdecimal
+         	isdecimal is an instance method
+         	-Method Arguments: []
+
+         +Method: __lt__
+         	__lt__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: index
+         	index is an instance method
+         	-Method Arguments: ['sub', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: __array_finalize__
+         	__array_finalize__ is an instance method
+         	-Method Arguments: ['obj']
+
+         +Method: isalnum
+         	isalnum is an instance method
+         	-Method Arguments: []
+
+         +Method: title
+         	title is an instance method
+         	-Method Arguments: []
+
+         +Method: rindex
+         	rindex is an instance method
+         	-Method Arguments: ['sub', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: __eq__
+         	__eq__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: find
+         	find is an instance method
+         	-Method Arguments: ['sub', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: decode
+         	decode is an instance method
+         	-Method Arguments: ['encoding', 'errors']
+         	--Default arguments: [('encoding', None), ('errors', None)]
+
+         +Method: isalpha
+         	isalpha is an instance method
+         	-Method Arguments: []
+
+         +Method: split
+         	split is an instance method
+         	-Method Arguments: ['sep', 'maxsplit']
+         	--Default arguments: [('sep', None), ('maxsplit', None)]
+
+         +Method: rstrip
+         	rstrip is an instance method
+         	-Method Arguments: ['chars']
+         	--Default arguments: [('chars', None)]
+
+         +Method: encode
+         	encode is an instance method
+         	-Method Arguments: ['encoding', 'errors']
+         	--Default arguments: [('encoding', None), ('errors', None)]
+
+         +Method: translate
+         	translate is an instance method
+         	-Method Arguments: ['table', 'deletechars']
+         	--Default arguments: [('deletechars', None)]
+
+         +Method: argsort
+         	argsort is an instance method
+         	-Method Arguments: ['axis', 'kind', 'order']
+         	--Default arguments: [('axis', -1), ('kind', 'quicksort'), ('order', None)]
+
+         +Method: startswith
+         	startswith is an instance method
+         	-Method Arguments: ['prefix', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: __getitem__
+         	__getitem__ is an instance method
+         	-Method Arguments: ['obj']
+
+         +Method: rjust
+         	rjust is an instance method
+         	-Method Arguments: ['width', 'fillchar']
+         	--Default arguments: [('fillchar', ' ')]
+
+         +Method: swapcase
+         	swapcase is an instance method
+         	-Method Arguments: []
+
+         +Method: isnumeric
+         	isnumeric is an instance method
+         	-Method Arguments: []
+
+         +Method: zfill
+         	zfill is an instance method
+         	-Method Arguments: ['width']
+
+         +Method: __add__
+         	__add__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __gt__
+         	__gt__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: replace
+         	replace is an instance method
+         	-Method Arguments: ['old', 'new', 'count']
+         	--Default arguments: [('count', None)]
+
+         +Method: rsplit
+         	rsplit is an instance method
+         	-Method Arguments: ['sep', 'maxsplit']
+         	--Default arguments: [('sep', None), ('maxsplit', None)]
+
+         +Method: count
+         	count is an instance method
+         	-Method Arguments: ['sub', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: lower
+         	lower is an instance method
+         	-Method Arguments: []
+
+         +Method: join
+         	join is an instance method
+         	-Method Arguments: ['seq']
+
+         +Method: center
+         	center is an instance method
+         	-Method Arguments: ['width', 'fillchar']
+         	--Default arguments: [('fillchar', ' ')]
+
+         +Method: __mod__
+         	__mod__ is an instance method
+         	-Method Arguments: ['i']
+
+         +Method: partition
+         	partition is an instance method
+         	-Method Arguments: ['sep']
+
+         +Method: rfind
+         	rfind is an instance method
+         	-Method Arguments: ['sub', 'start', 'end']
+         	--Default arguments: [('start', 0), ('end', None)]
+
+         +Method: isspace
+         	isspace is an instance method
+         	-Method Arguments: []
+
+         +Method: istitle
+         	istitle is an instance method
+         	-Method Arguments: []
+
+         +Method: __le__
+         	__le__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __mul__
+         	__mul__ is an instance method
+         	-Method Arguments: ['i']
+
+         +Method: islower
+         	islower is an instance method
+         	-Method Arguments: []
+
+         +Method: isupper
+         	isupper is an instance method
+         	-Method Arguments: []
+
+         +Method: __ge__
+         	__ge__ is an instance method
+         	-Method Arguments: ['other']
+
+
+     +Function: choose
+     	-Method Arguments: ['a', 'choices', 'out', 'mode']
+     	--Default arguments: [('out', None), ('mode', 'raise')]
+
+     +Function: clip
+     	-Method Arguments: ['a', 'a_min', 'a_max', 'out']
+     	--Default arguments: [('out', None)]
+
+     +Class: complex256
+         (No members)
+
+     +Class: complex256
+         (No members)
+
+     +Function: column_stack
+     	-Method Arguments: ['tup']
+
+     +Function: common_type
+     	-Positional Args Param: arrays
+
+     +Built-in Function: compare_chararrays
+     	-Method Arguments: None
+
+     +Class: complex
+         (No members)
+
+     +Class: complex128
+         (No members)
+
+     +Class: complex256
+         (No members)
+
+     +Class: complex64
+         (No members)
+
+     +Class: complex128
+         (No members)
+
+     +Class: complexfloating
+         (No members)
+
+     +Function: compress
+     	-Method Arguments: ['condition', 'a', 'axis', 'out']
+     	--Default arguments: [('axis', None), ('out', None)]
+
+     +Built-in Function: concatenate
+     	-Method Arguments: (a1, a2, ...
+
+     +Function: convolve
+     	-Method Arguments: ['a', 'v', 'mode']
+     	--Default arguments: [('mode', 'full')]
+
+     +Function: copy
+     	-Method Arguments: ['a', 'order']
+     	--Default arguments: [('order', 'K')]
+
+     +Built-in Function: copyto
+     	-Method Arguments: dst, src, casting='same_kind', where=None, preservena=False
+
+     +Function: corrcoef
+     	-Method Arguments: ['x', 'y', 'rowvar', 'bias', 'ddof']
+     	--Default arguments: [('y', None), ('rowvar', 1), ('bias', 0), ('ddof', None)]
+
+     +Function: correlate
+     	-Method Arguments: ['a', 'v', 'mode', 'old_behavior']
+     	--Default arguments: [('mode', 'valid'), ('old_behavior', False)]
+
+     +Built-in Function: count_nonzero
+     	-Method Arguments: a
+
+     +Function: cov
+     	-Method Arguments: ['m', 'y', 'rowvar', 'bias', 'ddof']
+     	--Default arguments: [('y', None), ('rowvar', 1), ('bias', 0), ('ddof', None)]
+
+     +Function: cross
+     	-Method Arguments: ['a', 'b', 'axisa', 'axisb', 'axisc', 'axis']
+     	--Default arguments: [('axisa', -1), ('axisb', -1), ('axisc', -1), ('axis', None)]
+
+     +Class: complex64
+         (No members)
+
+     +Function: cumprod
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None)]
+
+     +Function: cumproduct
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None)]
+
+     +Function: cumsum
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None)]
+
+     +Class: datetime64
+         (No members)
+
+     +Built-in Function: datetime_as_string
+     	-Method Arguments: None
+
+     +Built-in Function: datetime_data
+     	-Method Arguments: None
+
+     +Function: delete
+     	-Method Arguments: ['arr', 'obj', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: deprecate
+     	-Positional Args Param: args
+     	-Keyword Args Param: kwargs
+
+     +Function: <lambda>
+     	-Method Arguments: ['msg']
+
+     +Function: diag
+     	-Method Arguments: ['v', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: diag_indices
+     	-Method Arguments: ['n', 'ndim']
+     	--Default arguments: [('ndim', 2)]
+
+     +Function: diag_indices_from
+     	-Method Arguments: ['arr']
+
+     +Function: diagflat
+     	-Method Arguments: ['v', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: diagonal
+     	-Method Arguments: ['a', 'offset', 'axis1', 'axis2']
+     	--Default arguments: [('offset', 0), ('axis1', 0), ('axis2', 1)]
+
+     +Function: diff
+     	-Method Arguments: ['a', 'n', 'axis']
+     	--Default arguments: [('n', 1), ('axis', -1)]
+
+     +Built-in Function: digitize
+     	-Method Arguments: x, bins, right=False
+
+     +Function: disp
+     	-Method Arguments: ['mesg', 'device', 'linefeed']
+     	--Default arguments: [('device', None), ('linefeed', True)]
+
+     +Built-in Function: dot
+     	-Method Arguments: a, b, out=None
+
+     +Class: float64
+         (No members)
+
+     +Function: dsplit
+     	-Method Arguments: ['ary', 'indices_or_sections']
+
+     +Function: dstack
+     	-Method Arguments: ['tup']
+
+     +Class: dtype
+         (No members)
+
+     +Function: ediff1d
+     	-Method Arguments: ['ary', 'to_end', 'to_begin']
+     	--Default arguments: [('to_end', None), ('to_begin', None)]
+
+     +Built-in Function: einsum
+     	-Method Arguments: subscripts, *operands, out=None, dtype=None, order='K', casting='safe'
+
+     +Built-in Function: empty
+     	-Method Arguments: shape, dtype=float, order='C'
+
+     +Built-in Function: empty_like
+     	-Method Arguments: a, dtype=None, order='K', subok=True
+
+     +Class: errstate
+         +Method: __exit__
+         	__exit__ is an instance method
+         	-Method Arguments: []
+         	-Positional Args Param: exc_info
+
+         +Method: __enter__
+         	__enter__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: []
+         	-Keyword Args Param: kwargs
+
+
+     +Function: expand_dims
+     	-Method Arguments: ['a', 'axis']
+
+     +Function: extract
+     	-Method Arguments: ['condition', 'arr']
+
+     +Function: eye
+     	-Method Arguments: ['N', 'M', 'k', 'dtype']
+     	--Default arguments: [('M', None), ('k', 0), ('dtype', <type 'float'>)]
+
+     +Built-in Function: _fastCopyAndTranspose
+     	-Method Arguments: a
+
+     +Function: fill_diagonal
+     	-Method Arguments: ['a', 'val', 'wrap']
+     	--Default arguments: [('wrap', False)]
+
+     +Function: find_common_type
+     	-Method Arguments: ['array_types', 'scalar_types']
+
+     +Class: finfo
+         +Method: _init
+         	_init is an instance method
+         	-Method Arguments: ['dtype']
+
+         +Method: __str__
+         	__str__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+
+     +Function: fix
+     	-Method Arguments: ['x', 'y']
+     	--Default arguments: [('y', None)]
+
+     +Class: flatiter
+         (No members)
+
+     +Function: flatnonzero
+     	-Method Arguments: ['a']
+
+     +Class: flexible
+         (No members)
+
+     +Function: fliplr
+     	-Method Arguments: ['m']
+
+     +Function: flipud
+     	-Method Arguments: ['m']
+
+     +Class: float
+         (No members)
+
+     +Class: float128
+         (No members)
+
+     +Class: float16
+         (No members)
+
+     +Class: float32
+         (No members)
+
+     +Class: float64
+         (No members)
+
+     +Class: float64
+         (No members)
+
+     +Class: floating
+         (No members)
+
+     +Class: format_parser
+         +Method: _setfieldnames
+         	_setfieldnames is an instance method
+         	-Method Arguments: ['names', 'titles']
+
+         +Method: _createdescr
+         	_createdescr is an instance method
+         	-Method Arguments: ['byteorder']
+
+         +Method: _parseFormats
+         	_parseFormats is an instance method
+         	-Method Arguments: ['formats', 'aligned']
+         	--Default arguments: [('aligned', 0)]
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['formats', 'names', 'titles', 'aligned', 'byteorder']
+         	--Default arguments: [('aligned', False), ('byteorder', None)]
+
+
+     +Built-in Function: frombuffer
+     	-Method Arguments: buffer, dtype=float, count=-1, offset=0
+
+     +Built-in Function: fromfile
+     	-Method Arguments: file, dtype=float, count=-1, sep=''
+
+     +Function: fromfunction
+     	-Method Arguments: ['function', 'shape']
+     	-Keyword Args Param: kwargs
+
+     +Built-in Function: fromiter
+     	-Method Arguments: iterable, dtype, count=-1
+
+     +Built-in Function: frompyfunc
+     	-Method Arguments: func, nin, nout
+
+     +Function: fromregex
+     	-Method Arguments: ['file', 'regexp', 'dtype']
+
+     +Built-in Function: fromstring
+     	-Method Arguments: string, dtype=float, count=-1, sep=''
+
+     +Function: fv
+     	-Method Arguments: ['rate', 'nper', 'pmt', 'pv', 'when']
+     	--Default arguments: [('when', 'end')]
+
+     +Class: generic
+         (No members)
+
+     +Function: genfromtxt
+     	-Method Arguments: ['fname', 'dtype', 'comments', 'delimiter', 'skiprows', 'skip_header', 'skip_footer', 'converters', 'missing', 'missing_values', 'filling_values', 'usecols', 'names', 'excludelist', 'deletechars', 'replace_space', 'autostrip', 'case_sensitive', 'defaultfmt', 'unpack', 'usemask', 'loose', 'invalid_raise']
+     	--Default arguments: [('dtype', <type 'float'>), ('comments', '#'), ('delimiter', None), ('skiprows', 0), ('skip_header', 0), ('skip_footer', 0), ('converters', None), ('missing', ''), ('missing_values', None), ('filling_values', None), ('usecols', None), ('names', None), ('excludelist', None), ('deletechars', None), ('replace_space', '_'), ('autostrip', False), ('case_sensitive', True), ('defaultfmt', 'f%i'), ('unpack', None), ('usemask', False), ('loose', True), ('invalid_raise', True)]
+
+     +Function: get_array_wrap
+     	-Positional Args Param: args
+
+     +Function: get_include
+
+     +Function: get_numarray_include
+     	-Method Arguments: ['type']
+     	--Default arguments: [('type', None)]
+
+     +Function: get_printoptions
+
+     +Built-in Function: getbuffer
+     	-Method Arguments: obj [,offset[, size]]
+
+     +Function: getbufsize
+
+     +Function: geterr
+
+     +Function: geterrcall
+
+     +Built-in Function: geterrobj
+     	-Method Arguments: None
+
+     +Function: gradient
+     	-Method Arguments: ['f']
+     	-Positional Args Param: varargs
+
+     +Class: float16
+         (No members)
+
+     +Function: hamming
+     	-Method Arguments: ['M']
+
+     +Function: hanning
+     	-Method Arguments: ['M']
+
+     +Function: histogram
+     	-Method Arguments: ['a', 'bins', 'range', 'normed', 'weights', 'density']
+     	--Default arguments: [('bins', 10), ('range', None), ('normed', False), ('weights', None), ('density', None)]
+
+     +Function: histogram2d
+     	-Method Arguments: ['x', 'y', 'bins', 'range', 'normed', 'weights']
+     	--Default arguments: [('bins', 10), ('range', None), ('normed', False), ('weights', None)]
+
+     +Function: histogramdd
+     	-Method Arguments: ['sample', 'bins', 'range', 'normed', 'weights']
+     	--Default arguments: [('bins', 10), ('range', None), ('normed', False), ('weights', None)]
+
+     +Function: hsplit
+     	-Method Arguments: ['ary', 'indices_or_sections']
+
+     +Function: hstack
+     	-Method Arguments: ['tup']
+
+     +Function: i0
+     	-Method Arguments: ['x']
+
+     +Function: identity
+     	-Method Arguments: ['n', 'dtype']
+     	--Default arguments: [('dtype', None)]
+
+     +Class: iinfo
+         +Method: __str__
+         	__str__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['int_type']
+
+
+     +Function: imag
+     	-Method Arguments: ['val']
+
+     +Function: in1d
+     	-Method Arguments: ['ar1', 'ar2', 'assume_unique']
+     	--Default arguments: [('assume_unique', False)]
+
+     +Function: indices
+     	-Method Arguments: ['dimensions', 'dtype']
+     	--Default arguments: [('dtype', <type 'int'>)]
+
+     +Class: inexact
+         (No members)
+
+     +Function: info
+     	-Method Arguments: ['object', 'maxwidth', 'output', 'toplevel']
+     	--Default arguments: [('object', None), ('maxwidth', 76), ('output', <open file '<stdout>', mode 'w' at 0x7f764d10d150>), ('toplevel', 'numpy')]
+
+     +Built-in Function: inner
+     	-Method Arguments: a, b
+
+     +Function: insert
+     	-Method Arguments: ['arr', 'obj', 'values', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Class: int
+         (No members)
+
+     +Class: int64
+         (No members)
+
+     +Class: int16
+         (No members)
+
+     +Class: int32
+         (No members)
+
+     +Class: int64
+         (No members)
+
+     +Class: int8
+         (No members)
+
+     +Class: int64
+         (No members)
+
+     +Built-in Function: int_asbuffer
+     	-Method Arguments: None
+
+     +Class: int32
+         (No members)
+
+     +Class: integer
+         (No members)
+
+     +Function: interp
+     	-Method Arguments: ['x', 'xp', 'fp', 'left', 'right']
+     	--Default arguments: [('left', None), ('right', None)]
+
+     +Function: intersect1d
+     	-Method Arguments: ['ar1', 'ar2', 'assume_unique']
+     	--Default arguments: [('assume_unique', False)]
+
+     +Class: int64
+         (No members)
+
+     +Function: ipmt
+     	-Method Arguments: ['rate', 'per', 'nper', 'pv', 'fv', 'when']
+     	--Default arguments: [('fv', 0.0), ('when', 'end')]
+
+     +Function: irr
+     	-Method Arguments: ['values']
+
+     +Built-in Function: is_busday
+     	-Method Arguments: dates, weekmask='1111100', holidays=None, busdaycal=None, out=None
+
+     +Function: isclose
+     	-Method Arguments: ['a', 'b', 'rtol', 'atol', 'equal_nan']
+     	--Default arguments: [('rtol', 1e-05), ('atol', 1e-08), ('equal_nan', False)]
+
+     +Function: iscomplex
+     	-Method Arguments: ['x']
+
+     +Function: iscomplexobj
+     	-Method Arguments: ['x']
+
+     +Function: isfortran
+     	-Method Arguments: ['a']
+
+     +Function: isneginf
+     	-Method Arguments: ['x', 'y']
+     	--Default arguments: [('y', None)]
+
+     +Function: isposinf
+     	-Method Arguments: ['x', 'y']
+     	--Default arguments: [('y', None)]
+
+     +Function: isreal
+     	-Method Arguments: ['x']
+
+     +Function: isrealobj
+     	-Method Arguments: ['x']
+
+     +Function: isscalar
+     	-Method Arguments: ['num']
+
+     +Function: issctype
+     	-Method Arguments: ['rep']
+
+     +Function: issubclass_
+     	-Method Arguments: ['arg1', 'arg2']
+
+     +Function: issubdtype
+     	-Method Arguments: ['arg1', 'arg2']
+
+     +Function: issubsctype
+     	-Method Arguments: ['arg1', 'arg2']
+
+     +Function: iterable
+     	-Method Arguments: ['y']
+
+     +Function: ix_
+     	-Positional Args Param: args
+
+     +Function: kaiser
+     	-Method Arguments: ['M', 'beta']
+
+     +Function: kron
+     	-Method Arguments: ['a', 'b']
+
+     +Built-in Function: lexsort
+     	-Method Arguments: keys, axis=-1
+
+     +Function: linspace
+     	-Method Arguments: ['start', 'stop', 'num', 'endpoint', 'retstep']
+     	--Default arguments: [('num', 50), ('endpoint', True), ('retstep', False)]
+
+     +Function: load
+     	-Method Arguments: ['file', 'mmap_mode']
+     	--Default arguments: [('mmap_mode', None)]
+
+     +Built-in Function: loads
+     	-Method Arguments: string
+
+     +Function: loadtxt
+     	-Method Arguments: ['fname', 'dtype', 'comments', 'delimiter', 'converters', 'skiprows', 'usecols', 'unpack', 'ndmin']
+     	--Default arguments: [('dtype', <type 'float'>), ('comments', '#'), ('delimiter', None), ('converters', None), ('skiprows', 0), ('usecols', None), ('unpack', False), ('ndmin', 0)]
+
+     +Function: logspace
+     	-Method Arguments: ['start', 'stop', 'num', 'endpoint', 'base']
+     	--Default arguments: [('num', 50), ('endpoint', True), ('base', 10.0)]
+
+     +Class: long
+         (No members)
+
+     +Class: complex256
+         (No members)
+
+     +Class: float128
+         (No members)
+
+     +Class: float128
+         (No members)
+
+     +Class: int64
+         (No members)
+
+     +Function: lookfor
+     	-Method Arguments: ['what', 'module', 'import_modules', 'regenerate', 'output']
+     	--Default arguments: [('module', None), ('import_modules', True), ('regenerate', False), ('output', None)]
+
+     +Function: mafromtxt
+     	-Method Arguments: ['fname']
+     	-Keyword Args Param: kwargs
+
+     +Function: mask_indices
+     	-Method Arguments: ['n', 'mask_func', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: asmatrix
+     	-Method Arguments: ['data', 'dtype']
+     	--Default arguments: [('dtype', None)]
+
+     +Class: matrix
+         +Method: getH
+         	getH is an instance method
+         	-Method Arguments: []
+
+         +Method: getI
+         	getI is an instance method
+         	-Method Arguments: []
+
+         +Method: argmax
+         	argmax is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: getA
+         	getA is an instance method
+         	-Method Arguments: []
+
+         +Method: __str__
+         	__str__ is an instance method
+         	-Method Arguments: []
+
+         +Method: all
+         	all is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: __rmul__
+         	__rmul__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: getT
+         	getT is an instance method
+         	-Method Arguments: []
+
+         +Method: any
+         	any is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: ptp
+         	ptp is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: __rpow__
+         	__rpow__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __array_finalize__
+         	__array_finalize__ is an instance method
+         	-Method Arguments: ['obj']
+
+         +Method: min
+         	min is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: sum
+         	sum is an instance method
+         	-Method Arguments: ['axis', 'dtype', 'out']
+         	--Default arguments: [('axis', None), ('dtype', None), ('out', None)]
+
+         +Method: max
+         	max is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: var
+         	var is an instance method
+         	-Method Arguments: ['axis', 'dtype', 'out', 'ddof']
+         	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('ddof', 0)]
+
+         +Method: prod
+         	prod is an instance method
+         	-Method Arguments: ['axis', 'dtype', 'out']
+         	--Default arguments: [('axis', None), ('dtype', None), ('out', None)]
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+         +Method: tolist
+         	tolist is an instance method
+         	-Method Arguments: []
+
+         +Method: __getitem__
+         	__getitem__ is an instance method
+         	-Method Arguments: ['index']
+
+         +Method: _collapse
+         	_collapse is an instance method
+         	-Method Arguments: ['axis']
+
+         +Method: getA1
+         	getA1 is an instance method
+         	-Method Arguments: []
+
+         +Method: __pow__
+         	__pow__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: std
+         	std is an instance method
+         	-Method Arguments: ['axis', 'dtype', 'out', 'ddof']
+         	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('ddof', 0)]
+
+         +Method: _align
+         	_align is an instance method
+         	-Method Arguments: ['axis']
+
+         +Method: __imul__
+         	__imul__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: argmin
+         	argmin is an instance method
+         	-Method Arguments: ['axis', 'out']
+         	--Default arguments: [('axis', None), ('out', None)]
+
+         +Method: __ipow__
+         	__ipow__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __mul__
+         	__mul__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: mean
+         	mean is an instance method
+         	-Method Arguments: ['axis', 'dtype', 'out']
+         	--Default arguments: [('axis', None), ('dtype', None), ('out', None)]
+
+
+     +Function: amax
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Function: maximum_sctype
+     	-Method Arguments: ['t']
+
+     +Function: may_share_memory
+     	-Method Arguments: ['a', 'b']
+
+     +Function: mean
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('keepdims', False)]
+
+     +Function: median
+     	-Method Arguments: ['a', 'axis', 'out', 'overwrite_input']
+     	--Default arguments: [('axis', None), ('out', None), ('overwrite_input', False)]
+
+     +Class: memmap
+         +Method: flush
+         	flush is an instance method
+         	-Method Arguments: []
+
+         +Method: __array_finalize__
+         	__array_finalize__ is an instance method
+         	-Method Arguments: ['obj']
+
+
+     +Function: meshgrid
+     	-Positional Args Param: xi
+     	-Keyword Args Param: kwargs
+
+     +Function: amin
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Built-in Function: min_scalar_type
+     	-Method Arguments: a
+
+     +Function: mintypecode
+     	-Method Arguments: ['typechars', 'typeset', 'default']
+     	--Default arguments: [('typeset', 'GDFgdf'), ('default', 'd')]
+
+     +Function: mirr
+     	-Method Arguments: ['values', 'finance_rate', 'reinvest_rate']
+
+     +Function: msort
+     	-Method Arguments: ['a']
+
+     +Function: nan_to_num
+     	-Method Arguments: ['x']
+
+     +Function: nanargmax
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: nanargmin
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: nanmax
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: nanmin
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: nansum
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Class: ndarray
+         (No members)
+
+     +Class: ndenumerate
+         +Method: next
+         	next is an instance method
+         	-Method Arguments: []
+
+         +Method: __iter__
+         	__iter__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['arr']
+
+
+     +Function: ndfromtxt
+     	-Method Arguments: ['fname']
+     	-Keyword Args Param: kwargs
+
+     +Function: ndim
+     	-Method Arguments: ['a']
+
+     +Class: ndindex
+         +Method: ndincr
+         	ndincr is an instance method
+         	-Method Arguments: []
+
+         +Method: _incrementone
+         	_incrementone is an instance method
+         	-Method Arguments: ['axis']
+
+         +Method: __iter__
+         	__iter__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: []
+         	-Positional Args Param: args
+
+         +Method: next
+         	next is an instance method
+         	-Method Arguments: []
+
+
+     +Class: nditer
+         (No members)
+
+     +Built-in Function: nested_iters
+     	-Method Arguments: None
+
+     +Built-in Function: newbuffer
+     	-Method Arguments: size
+
+     +Function: nonzero
+     	-Method Arguments: ['a']
+
+     +Function: nper
+     	-Method Arguments: ['rate', 'pmt', 'pv', 'fv', 'when']
+     	--Default arguments: [('fv', 0), ('when', 'end')]
+
+     +Function: npv
+     	-Method Arguments: ['rate', 'values']
+
+     +Class: number
+         (No members)
+
+     +Function: obj2sctype
+     	-Method Arguments: ['rep', 'default']
+     	--Default arguments: [('default', None)]
+
+     +Class: object
+         (No members)
+
+     +Class: object_
+         (No members)
+
+     +Class: object_
+         (No members)
+
+     +Function: ones
+     	-Method Arguments: ['shape', 'dtype', 'order']
+     	--Default arguments: [('dtype', None), ('order', 'C')]
+
+     +Function: ones_like
+     	-Method Arguments: ['a', 'dtype', 'order', 'subok']
+     	--Default arguments: [('dtype', None), ('order', 'K'), ('subok', True)]
+
+     +Function: outer
+     	-Method Arguments: ['a', 'b']
+
+     +Built-in Function: packbits
+     	-Method Arguments: myarray, axis=None
+
+     +Function: pad
+     	-Method Arguments: ['array', 'pad_width', 'mode']
+     	--Default arguments: [('mode', None)]
+     	-Keyword Args Param: kwargs
+
+     +Function: percentile
+     	-Method Arguments: ['a', 'q', 'axis', 'out', 'overwrite_input']
+     	--Default arguments: [('axis', None), ('out', None), ('overwrite_input', False)]
+
+     +Function: piecewise
+     	-Method Arguments: ['x', 'condlist', 'funclist']
+     	-Positional Args Param: args
+     	-Keyword Args Param: kw
+
+     +Function: pkgload
+     	-Positional Args Param: packages
+     	-Keyword Args Param: options
+
+     +Function: place
+     	-Method Arguments: ['arr', 'mask', 'vals']
+
+     +Function: pmt
+     	-Method Arguments: ['rate', 'nper', 'pv', 'fv', 'when']
+     	--Default arguments: [('fv', 0), ('when', 'end')]
+
+     +Function: poly
+     	-Method Arguments: ['seq_of_zeros']
+
+     +Class: poly1d
+         +Method: __rdiv__
+         	__rdiv__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __str__
+         	__str__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __radd__
+         	__radd__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __div__
+         	__div__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __rsub__
+         	__rsub__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __rdiv__
+         	__rdiv__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __rmul__
+         	__rmul__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['c_or_r', 'r', 'variable']
+         	--Default arguments: [('r', 0), ('variable', None)]
+
+         +Method: __setattr__
+         	__setattr__ is an instance method
+         	-Method Arguments: ['key', 'val']
+
+         +Method: __getattr__
+         	__getattr__ is an instance method
+         	-Method Arguments: ['key']
+
+         +Method: __pos__
+         	__pos__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __call__
+         	__call__ is an instance method
+         	-Method Arguments: ['val']
+
+         +Method: __len__
+         	__len__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __neg__
+         	__neg__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __ne__
+         	__ne__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: deriv
+         	deriv is an instance method
+         	-Method Arguments: ['m']
+         	--Default arguments: [('m', 1)]
+
+         +Method: __getitem__
+         	__getitem__ is an instance method
+         	-Method Arguments: ['val']
+
+         +Method: __setitem__
+         	__setitem__ is an instance method
+         	-Method Arguments: ['key', 'val']
+
+         +Method: __pow__
+         	__pow__ is an instance method
+         	-Method Arguments: ['val']
+
+         +Method: __add__
+         	__add__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __eq__
+         	__eq__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __array__
+         	__array__ is an instance method
+         	-Method Arguments: ['t']
+         	--Default arguments: [('t', None)]
+
+         +Method: __iter__
+         	__iter__ is an instance method
+         	-Method Arguments: []
+
+         +Method: integ
+         	integ is an instance method
+         	-Method Arguments: ['m', 'k']
+         	--Default arguments: [('m', 1), ('k', 0)]
+
+         +Method: __div__
+         	__div__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __mul__
+         	__mul__ is an instance method
+         	-Method Arguments: ['other']
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __sub__
+         	__sub__ is an instance method
+         	-Method Arguments: ['other']
+
+
+     +Function: polyadd
+     	-Method Arguments: ['a1', 'a2']
+
+     +Function: polyder
+     	-Method Arguments: ['p', 'm']
+     	--Default arguments: [('m', 1)]
+
+     +Function: polydiv
+     	-Method Arguments: ['u', 'v']
+
+     +Function: polyfit
+     	-Method Arguments: ['x', 'y', 'deg', 'rcond', 'full', 'w', 'cov']
+     	--Default arguments: [('rcond', None), ('full', False), ('w', None), ('cov', False)]
+
+     +Function: polyint
+     	-Method Arguments: ['p', 'm', 'k']
+     	--Default arguments: [('m', 1), ('k', None)]
+
+     +Function: polymul
+     	-Method Arguments: ['a1', 'a2']
+
+     +Function: polysub
+     	-Method Arguments: ['a1', 'a2']
+
+     +Function: polyval
+     	-Method Arguments: ['p', 'x']
+
+     +Function: ppmt
+     	-Method Arguments: ['rate', 'per', 'nper', 'pv', 'fv', 'when']
+     	--Default arguments: [('fv', 0.0), ('when', 'end')]
+
+     +Function: prod
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('keepdims', False)]
+
+     +Function: product
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('keepdims', False)]
+
+     +Built-in Function: promote_types
+     	-Method Arguments: type1, type2
+
+     +Function: ptp
+     	-Method Arguments: ['a', 'axis', 'out']
+     	--Default arguments: [('axis', None), ('out', None)]
+
+     +Function: put
+     	-Method Arguments: ['a', 'ind', 'v', 'mode']
+     	--Default arguments: [('mode', 'raise')]
+
+     +Built-in Function: putmask
+     	-Method Arguments: a, mask, values
+
+     +Function: pv
+     	-Method Arguments: ['rate', 'nper', 'pmt', 'fv', 'when']
+     	--Default arguments: [('fv', 0.0), ('when', 'end')]
+
+     +Function: rank
+     	-Method Arguments: ['a']
+
+     +Function: rate
+     	-Method Arguments: ['nper', 'pmt', 'pv', 'fv', 'when', 'guess', 'tol', 'maxiter']
+     	--Default arguments: [('when', 'end'), ('guess', 0.1), ('tol', 1e-06), ('maxiter', 100)]
+
+     +Function: ravel
+     	-Method Arguments: ['a', 'order']
+     	--Default arguments: [('order', 'C')]
+
+     +Built-in Function: ravel_multi_index
+     	-Method Arguments: multi_index, dims, mode='raise', order='C'
+
+     +Function: real
+     	-Method Arguments: ['val']
+
+     +Function: real_if_close
+     	-Method Arguments: ['a', 'tol']
+     	--Default arguments: [('tol', 100)]
+
+     +Class: recarray
+         +Method: __getitem__
+         	__getitem__ is an instance method
+         	-Method Arguments: ['indx']
+
+         +Method: __getattribute__
+         	__getattribute__ is an instance method
+         	-Method Arguments: ['attr']
+
+         +Method: __setattr__
+         	__setattr__ is an instance method
+         	-Method Arguments: ['attr', 'val']
+
+         +Method: field
+         	field is an instance method
+         	-Method Arguments: ['attr', 'val']
+         	--Default arguments: [('val', None)]
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+         +Method: view
+         	view is an instance method
+         	-Method Arguments: ['dtype', 'type']
+         	--Default arguments: [('dtype', None), ('type', None)]
+
+
+     +Function: recfromcsv
+     	-Method Arguments: ['fname']
+     	-Keyword Args Param: kwargs
+
+     +Function: recfromtxt
+     	-Method Arguments: ['fname']
+     	-Keyword Args Param: kwargs
+
+     +Class: record
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __str__
+         	__str__ is an instance method
+         	-Method Arguments: []
+
+         +Method: pprint
+         	pprint is an instance method
+         	-Method Arguments: []
+
+         +Method: __getattribute__
+         	__getattribute__ is an instance method
+         	-Method Arguments: ['attr']
+
+         +Method: __setattr__
+         	__setattr__ is an instance method
+         	-Method Arguments: ['attr', 'val']
+
+
+     +Function: repeat
+     	-Method Arguments: ['a', 'repeats', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: require
+     	-Method Arguments: ['a', 'dtype', 'requirements']
+     	--Default arguments: [('dtype', None), ('requirements', None)]
+
+     +Function: reshape
+     	-Method Arguments: ['a', 'newshape', 'order']
+     	--Default arguments: [('order', 'C')]
+
+     +Function: resize
+     	-Method Arguments: ['a', 'new_shape']
+
+     +Built-in Function: restoredot
+     	-Method Arguments: None
+
+     +Built-in Function: result_type
+     	-Method Arguments: *arrays_and_dtypes
+
+     +Function: roll
+     	-Method Arguments: ['a', 'shift', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: rollaxis
+     	-Method Arguments: ['a', 'axis', 'start']
+     	--Default arguments: [('start', 0)]
+
+     +Function: roots
+     	-Method Arguments: ['p']
+
+     +Function: rot90
+     	-Method Arguments: ['m', 'k']
+     	--Default arguments: [('k', 1)]
+
+     +Function: round_
+     	-Method Arguments: ['a', 'decimals', 'out']
+     	--Default arguments: [('decimals', 0), ('out', None)]
+
+     +Function: round_
+     	-Method Arguments: ['a', 'decimals', 'out']
+     	--Default arguments: [('decimals', 0), ('out', None)]
+
+     +Function: vstack
+     	-Method Arguments: ['tup']
+
+     +Function: safe_eval
+     	-Method Arguments: ['source']
+
+     +Function: save
+     	-Method Arguments: ['file', 'arr']
+
+     +Function: savetxt
+     	-Method Arguments: ['fname', 'X', 'fmt', 'delimiter', 'newline', 'header', 'footer', 'comments']
+     	--Default arguments: [('fmt', '%.18e'), ('delimiter', ' '), ('newline', '\n'), ('header', ''), ('footer', ''), ('comments', '# ')]
+
+     +Function: savez
+     	-Method Arguments: ['file']
+     	-Positional Args Param: args
+     	-Keyword Args Param: kwds
+
+     +Function: savez_compressed
+     	-Method Arguments: ['file']
+     	-Positional Args Param: args
+     	-Keyword Args Param: kwds
+
+     +Function: sctype2char
+     	-Method Arguments: ['sctype']
+
+     +Function: searchsorted
+     	-Method Arguments: ['a', 'v', 'side', 'sorter']
+     	--Default arguments: [('side', 'left'), ('sorter', None)]
+
+     +Function: select
+     	-Method Arguments: ['condlist', 'choicelist', 'default']
+     	--Default arguments: [('default', 0)]
+
+     +Built-in Function: set_numeric_ops
+     	-Method Arguments: op1=func1, op2=func2, ...
+
+     +Function: set_printoptions
+     	-Method Arguments: ['precision', 'threshold', 'edgeitems', 'linewidth', 'suppress', 'nanstr', 'infstr', 'formatter']
+     	--Default arguments: [('precision', None), ('threshold', None), ('edgeitems', None), ('linewidth', None), ('suppress', None), ('nanstr', None), ('infstr', None), ('formatter', None)]
+
+     +Function: set_string_function
+     	-Method Arguments: ['f', 'repr']
+     	--Default arguments: [('repr', True)]
+
+     +Function: setbufsize
+     	-Method Arguments: ['size']
+
+     +Function: setdiff1d
+     	-Method Arguments: ['ar1', 'ar2', 'assume_unique']
+     	--Default arguments: [('assume_unique', False)]
+
+     +Function: seterr
+     	-Method Arguments: ['all', 'divide', 'over', 'under', 'invalid']
+     	--Default arguments: [('all', None), ('divide', None), ('over', None), ('under', None), ('invalid', None)]
+
+     +Function: seterrcall
+     	-Method Arguments: ['func']
+
+     +Built-in Function: seterrobj
+     	-Method Arguments: errobj
+
+     +Function: setxor1d
+     	-Method Arguments: ['ar1', 'ar2', 'assume_unique']
+     	--Default arguments: [('assume_unique', False)]
+
+     +Function: shape
+     	-Method Arguments: ['a']
+
+     +Class: int16
+         (No members)
+
+     +Function: show
+
+     +Class: signedinteger
+         (No members)
+
+     +Function: sinc
+     	-Method Arguments: ['x']
+
+     +Class: float32
+         (No members)
+
+     +Class: complex64
+         (No members)
+
+     +Function: size
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: sometrue
+     	-Method Arguments: ['a', 'axis', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('out', None), ('keepdims', False)]
+
+     +Function: sort
+     	-Method Arguments: ['a', 'axis', 'kind', 'order']
+     	--Default arguments: [('axis', -1), ('kind', 'quicksort'), ('order', None)]
+
+     +Function: sort_complex
+     	-Method Arguments: ['a']
+
+     +Function: source
+     	-Method Arguments: ['object', 'output']
+     	--Default arguments: [('output', <open file '<stdout>', mode 'w' at 0x7f764d10d150>)]
+
+     +Function: split
+     	-Method Arguments: ['ary', 'indices_or_sections', 'axis']
+     	--Default arguments: [('axis', 0)]
+
+     +Function: squeeze
+     	-Method Arguments: ['a', 'axis']
+     	--Default arguments: [('axis', None)]
+
+     +Function: std
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out', 'ddof', 'keepdims']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('ddof', 0), ('keepdims', False)]
+
+     +Class: str
+         (No members)
+
+     +Class: string_
+         (No members)
+
+     +Class: string_
+         (No members)
+
+     +Class: string_
+         (No members)
+
+     +Function: sum
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out', 'keepdims']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('keepdims', False)]
+
+     +Function: swapaxes
+     	-Method Arguments: ['a', 'axis1', 'axis2']
+
+     +Function: take
+     	-Method Arguments: ['a', 'indices', 'axis', 'out', 'mode']
+     	--Default arguments: [('axis', None), ('out', None), ('mode', 'raise')]
+
+     +Function: tensordot
+     	-Method Arguments: ['a', 'b', 'axes']
+     	--Default arguments: [('axes', 2)]
+
+     +Function: test
+     	test is an instance method
+     	-Method Arguments: ['label', 'verbose', 'extra_argv', 'doctests', 'coverage', 'raise_warnings']
+     	--Default arguments: [('label', 'fast'), ('verbose', 1), ('extra_argv', None), ('doctests', False), ('coverage', False), ('raise_warnings', None)]
+
+     +Function: tile
+     	-Method Arguments: ['A', 'reps']
+
+     +Class: timedelta64
+         (No members)
+
+     +Function: trace
+     	-Method Arguments: ['a', 'offset', 'axis1', 'axis2', 'dtype', 'out']
+     	--Default arguments: [('offset', 0), ('axis1', 0), ('axis2', 1), ('dtype', None), ('out', None)]
+
+     +Function: transpose
+     	-Method Arguments: ['a', 'axes']
+     	--Default arguments: [('axes', None)]
+
+     +Function: trapz
+     	-Method Arguments: ['y', 'x', 'dx', 'axis']
+     	--Default arguments: [('x', None), ('dx', 1.0), ('axis', -1)]
+
+     +Function: tri
+     	-Method Arguments: ['N', 'M', 'k', 'dtype']
+     	--Default arguments: [('M', None), ('k', 0), ('dtype', <type 'float'>)]
+
+     +Function: tril
+     	-Method Arguments: ['m', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: tril_indices
+     	-Method Arguments: ['n', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: tril_indices_from
+     	-Method Arguments: ['arr', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: trim_zeros
+     	-Method Arguments: ['filt', 'trim']
+     	--Default arguments: [('trim', 'fb')]
+
+     +Function: triu
+     	-Method Arguments: ['m', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: triu_indices
+     	-Method Arguments: ['n', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: triu_indices_from
+     	-Method Arguments: ['arr', 'k']
+     	--Default arguments: [('k', 0)]
+
+     +Function: typename
+     	-Method Arguments: ['char']
+
+     +Class: uint8
+         (No members)
+
+     +Class: ufunc
+         (No members)
+
+     +Class: uint64
+         (No members)
+
+     +Class: uint64
+         (No members)
+
+     +Class: uint16
+         (No members)
+
+     +Class: uint32
+         (No members)
+
+     +Class: uint64
+         (No members)
+
+     +Class: uint8
+         (No members)
+
+     +Class: uint32
+         (No members)
+
+     +Class: uint64
+         (No members)
+
+     +Class: uint64
+         (No members)
+
+     +Class: unicode
+         (No members)
+
+     +Class: unicode_
+         (No members)
+
+     +Class: unicode_
+         (No members)
+
+     +Function: union1d
+     	-Method Arguments: ['ar1', 'ar2']
+
+     +Function: unique
+     	-Method Arguments: ['ar', 'return_index', 'return_inverse']
+     	--Default arguments: [('return_index', False), ('return_inverse', False)]
+
+     +Built-in Function: unpackbits
+     	-Method Arguments: myarray, axis=None
+
+     +Built-in Function: unravel_index
+     	-Method Arguments: indices, dims, order='C'
+
+     +Class: unsignedinteger
+         (No members)
+
+     +Function: unwrap
+     	-Method Arguments: ['p', 'discont', 'axis']
+     	--Default arguments: [('discont', 3.141592653589793), ('axis', -1)]
+
+     +Class: uint16
+         (No members)
+
+     +Function: vander
+     	-Method Arguments: ['x', 'N']
+     	--Default arguments: [('N', None)]
+
+     +Function: var
+     	-Method Arguments: ['a', 'axis', 'dtype', 'out', 'ddof', 'keepdims']
+     	--Default arguments: [('axis', None), ('dtype', None), ('out', None), ('ddof', 0), ('keepdims', False)]
+
+     +Built-in Function: vdot
+     	-Method Arguments: a, b
+
+     +Class: vectorize
+         +Method: __call__
+         	__call__ is an instance method
+         	-Method Arguments: []
+         	-Positional Args Param: args
+         	-Keyword Args Param: kwargs
+
+         +Method: _get_ufunc_and_otypes
+         	_get_ufunc_and_otypes is an instance method
+         	-Method Arguments: ['func', 'args']
+
+         +Method: _vectorize_call
+         	_vectorize_call is an instance method
+         	-Method Arguments: ['func', 'args']
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['pyfunc', 'otypes', 'doc', 'excluded', 'cache']
+         	--Default arguments: [('otypes', ''), ('doc', None), ('excluded', None), ('cache', False)]
+
+
+     +Class: void
+         (No members)
+
+     +Class: void
+         (No members)
+
+     +Function: vsplit
+     	-Method Arguments: ['ary', 'indices_or_sections']
+
+     +Function: vstack
+     	-Method Arguments: ['tup']
+
+     +Built-in Function: where
+     	-Method Arguments: condition, [x, y]
+
+     +Function: who
+     	-Method Arguments: ['vardict']
+     	--Default arguments: [('vardict', None)]
+
+     +Built-in Function: zeros
+     	-Method Arguments: shape, dtype=float, order='C'
+
+     +Function: zeros_like
+     	-Method Arguments: ['a', 'dtype', 'order', 'subok']
+     	--Default arguments: [('dtype', None), ('order', 'K'), ('subok', True)]
+

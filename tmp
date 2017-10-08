@@ -1,0 +1,4771 @@
+[Module: requests]
+
+     +Class: ConnectionError
+         (No members)
+
+     +Class: HTTPError
+         (No members)
+
+     +Class: NullHandler
+         +Method: createLock
+         	createLock is an instance method
+         	-Method Arguments: []
+
+         +Method: handle
+         	handle is an instance method
+         	-Method Arguments: ['record']
+
+         +Method: emit
+         	emit is an instance method
+         	-Method Arguments: ['record']
+
+
+     +Class: PreparedRequest
+         +Method: prepare_method
+         	prepare_method is an instance method
+         	-Method Arguments: ['method']
+
+         +Method: prepare
+         	prepare is an instance method
+         	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+         	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+         +Method: prepare_body
+         	prepare_body is an instance method
+         	-Method Arguments: ['data', 'files', 'json']
+         	--Default arguments: [('json', None)]
+
+         +Method: prepare_hooks
+         	prepare_hooks is an instance method
+         	-Method Arguments: ['hooks']
+
+         +Method: prepare_cookies
+         	prepare_cookies is an instance method
+         	-Method Arguments: ['cookies']
+
+         +Method: prepare_url
+         	prepare_url is an instance method
+         	-Method Arguments: ['url', 'params']
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+         +Method: prepare_auth
+         	prepare_auth is an instance method
+         	-Method Arguments: ['auth', 'url']
+         	--Default arguments: [('url', '')]
+
+         +Method: copy
+         	copy is an instance method
+         	-Method Arguments: []
+
+         +Method: prepare_content_length
+         	prepare_content_length is an instance method
+         	-Method Arguments: ['body']
+
+         +Method: prepare_headers
+         	prepare_headers is an instance method
+         	-Method Arguments: ['headers']
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: []
+
+
+     +Class: Request
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+         	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+         +Method: prepare
+         	prepare is an instance method
+         	-Method Arguments: []
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+
+     +Class: RequestException
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: []
+         	-Positional Args Param: args
+         	-Keyword Args Param: kwargs
+
+
+     +Class: Response
+         +Method: __nonzero__
+         	__nonzero__ is an instance method
+         	-Method Arguments: []
+
+         +Method: iter_content
+         	iter_content is an instance method
+         	-Method Arguments: ['chunk_size', 'decode_unicode']
+         	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+         +Method: __setstate__
+         	__setstate__ is an instance method
+         	-Method Arguments: ['state']
+
+         +Method: __iter__
+         	__iter__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __bool__
+         	__bool__ is an instance method
+         	-Method Arguments: []
+
+         +Method: close
+         	close is an instance method
+         	-Method Arguments: []
+
+         +Method: iter_lines
+         	iter_lines is an instance method
+         	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+         	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: []
+
+         +Method: json
+         	json is an instance method
+         	-Method Arguments: []
+         	-Keyword Args Param: kwargs
+
+         +Method: raise_for_status
+         	raise_for_status is an instance method
+         	-Method Arguments: []
+
+         +Method: __getstate__
+         	__getstate__ is an instance method
+         	-Method Arguments: []
+
+         +Method: __repr__
+         	__repr__ is an instance method
+         	-Method Arguments: []
+
+
+     +Class: Session
+         +Method: __exit__
+         	__exit__ is an instance method
+         	-Method Arguments: []
+         	-Positional Args Param: args
+
+         +Method: __setstate__
+         	__setstate__ is an instance method
+         	-Method Arguments: ['state']
+
+         +Method: head
+         	head is an instance method
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+         +Method: put
+         	put is an instance method
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Method: close
+         	close is an instance method
+         	-Method Arguments: []
+
+         +Method: post
+         	post is an instance method
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Method: __init__
+         	__init__ is an instance method
+         	-Method Arguments: []
+
+         +Method: prepare_request
+         	prepare_request is an instance method
+         	-Method Arguments: ['request']
+
+         +Method: get_adapter
+         	get_adapter is an instance method
+         	-Method Arguments: ['url']
+
+         +Method: mount
+         	mount is an instance method
+         	-Method Arguments: ['prefix', 'adapter']
+
+         +Method: __enter__
+         	__enter__ is an instance method
+         	-Method Arguments: []
+
+         +Method: request
+         	request is an instance method
+         	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+         	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+         +Method: send
+         	send is an instance method
+         	-Method Arguments: ['request']
+         	-Keyword Args Param: kwargs
+
+         +Method: patch
+         	patch is an instance method
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Method: merge_environment_settings
+         	merge_environment_settings is an instance method
+         	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+         +Method: options
+         	options is an instance method
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+         +Method: get
+         	get is an instance method
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+         +Method: __getstate__
+         	__getstate__ is an instance method
+         	-Method Arguments: []
+
+         +Method: delete
+         	delete is an instance method
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+
+     +Class: Timeout
+         (No members)
+
+     +Class: TooManyRedirects
+         (No members)
+
+     +Class: URLRequired
+         (No members)
+
+FFF: module: requests.adapters
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.adapters.adapters
+No module named adapters
+FFF: module: requests.adapters.api
+No module named api
+FFF: module: requests.adapters.auth
+No module named auth
+FFF: module: requests.adapters.certs
+No module named certs
+FFF: module: requests.adapters.compat
+No module named compat
+FFF: module: requests.adapters.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.adapters.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.adapters.hooks
+No module named hooks
+FFF: module: requests.adapters.logging
+No module named logging
+FFF: module: requests.adapters.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.adapters.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.adapters.sessions
+No module named sessions
+FFF: module: requests.adapters.status_codes
+No module named status_codes
+FFF: module: requests.adapters.structures
+No module named structures
+FFF: module: requests.adapters.utils
+No module named utils
+FFF: module: requests.api
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.api.adapters
+No module named adapters
+FFF: module: requests.api.api
+No module named api
+FFF: module: requests.api.auth
+No module named auth
+FFF: module: requests.api.certs
+No module named certs
+FFF: module: requests.api.compat
+No module named compat
+FFF: module: requests.api.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.api.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.api.hooks
+No module named hooks
+FFF: module: requests.api.logging
+No module named logging
+FFF: module: requests.api.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.api.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.api.sessions
+No module named sessions
+FFF: module: requests.api.status_codes
+No module named status_codes
+FFF: module: requests.api.structures
+No module named structures
+FFF: module: requests.api.utils
+No module named utils
+FFF: module: requests.auth
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.auth.adapters
+No module named adapters
+FFF: module: requests.auth.api
+No module named api
+FFF: module: requests.auth.auth
+No module named auth
+FFF: module: requests.auth.certs
+No module named certs
+FFF: module: requests.auth.compat
+No module named compat
+FFF: module: requests.auth.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.auth.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.auth.hooks
+No module named hooks
+FFF: module: requests.auth.logging
+No module named logging
+FFF: module: requests.auth.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.auth.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.auth.sessions
+No module named sessions
+FFF: module: requests.auth.status_codes
+No module named status_codes
+FFF: module: requests.auth.structures
+No module named structures
+FFF: module: requests.auth.utils
+No module named utils
+FFF: module: requests.certs
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.certs.adapters
+No module named adapters
+FFF: module: requests.certs.api
+No module named api
+FFF: module: requests.certs.auth
+No module named auth
+FFF: module: requests.certs.certs
+No module named certs
+FFF: module: requests.certs.compat
+No module named compat
+FFF: module: requests.certs.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.certs.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.certs.hooks
+No module named hooks
+FFF: module: requests.certs.logging
+No module named logging
+FFF: module: requests.certs.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.certs.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.certs.sessions
+No module named sessions
+FFF: module: requests.certs.status_codes
+No module named status_codes
+FFF: module: requests.certs.structures
+No module named structures
+FFF: module: requests.certs.utils
+No module named utils
+FFF: module: requests.compat
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.compat.adapters
+No module named adapters
+FFF: module: requests.compat.api
+No module named api
+FFF: module: requests.compat.auth
+No module named auth
+FFF: module: requests.compat.certs
+No module named certs
+FFF: module: requests.compat.compat
+No module named compat
+FFF: module: requests.compat.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.compat.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.compat.hooks
+No module named hooks
+FFF: module: requests.compat.logging
+No module named logging
+FFF: module: requests.compat.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.compat.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.compat.sessions
+No module named sessions
+FFF: module: requests.compat.status_codes
+No module named status_codes
+FFF: module: requests.compat.structures
+No module named structures
+FFF: module: requests.compat.utils
+No module named utils
+FFF: module: requests.cookies
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.cookies.adapters
+No module named adapters
+FFF: module: requests.cookies.api
+No module named api
+FFF: module: requests.cookies.auth
+No module named auth
+FFF: module: requests.cookies.certs
+No module named certs
+FFF: module: requests.cookies.compat
+No module named compat
+FFF: module: requests.cookies.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.cookies.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.cookies.hooks
+No module named hooks
+FFF: module: requests.cookies.logging
+No module named logging
+FFF: module: requests.cookies.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.cookies.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.cookies.sessions
+No module named sessions
+FFF: module: requests.cookies.status_codes
+No module named status_codes
+FFF: module: requests.cookies.structures
+No module named structures
+FFF: module: requests.cookies.utils
+No module named utils
+     +Function: delete
+     	-Method Arguments: ['url']
+     	-Keyword Args Param: kwargs
+
+FFF: module: requests.exceptions
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.exceptions.adapters
+No module named adapters
+FFF: module: requests.exceptions.api
+No module named api
+FFF: module: requests.exceptions.auth
+No module named auth
+FFF: module: requests.exceptions.certs
+No module named certs
+FFF: module: requests.exceptions.compat
+No module named compat
+FFF: module: requests.exceptions.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.exceptions.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.exceptions.hooks
+No module named hooks
+FFF: module: requests.exceptions.logging
+No module named logging
+FFF: module: requests.exceptions.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.exceptions.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.exceptions.sessions
+No module named sessions
+FFF: module: requests.exceptions.status_codes
+No module named status_codes
+FFF: module: requests.exceptions.structures
+No module named structures
+FFF: module: requests.exceptions.utils
+No module named utils
+     +Function: get
+     	-Method Arguments: ['url', 'params']
+     	--Default arguments: [('params', None)]
+     	-Keyword Args Param: kwargs
+
+     +Function: head
+     	-Method Arguments: ['url']
+     	-Keyword Args Param: kwargs
+
+FFF: module: requests.hooks
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.hooks.adapters
+No module named adapters
+FFF: module: requests.hooks.api
+No module named api
+FFF: module: requests.hooks.auth
+No module named auth
+FFF: module: requests.hooks.certs
+No module named certs
+FFF: module: requests.hooks.compat
+No module named compat
+FFF: module: requests.hooks.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.hooks.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.hooks.hooks
+No module named hooks
+FFF: module: requests.hooks.logging
+No module named logging
+FFF: module: requests.hooks.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.hooks.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.hooks.sessions
+No module named sessions
+FFF: module: requests.hooks.status_codes
+No module named status_codes
+FFF: module: requests.hooks.structures
+No module named structures
+FFF: module: requests.hooks.utils
+No module named utils
+FFF: module: requests.logging
+No module named logging
+FFF: module: requests.models
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.models.adapters
+No module named adapters
+FFF: module: requests.models.api
+No module named api
+FFF: module: requests.models.auth
+No module named auth
+FFF: module: requests.models.certs
+No module named certs
+FFF: module: requests.models.compat
+No module named compat
+FFF: module: requests.models.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.models.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.models.hooks
+No module named hooks
+FFF: module: requests.models.logging
+No module named logging
+FFF: module: requests.models.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.models.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.models.sessions
+No module named sessions
+FFF: module: requests.models.status_codes
+No module named status_codes
+FFF: module: requests.models.structures
+No module named structures
+FFF: module: requests.models.utils
+No module named utils
+     +Function: options
+     	-Method Arguments: ['url']
+     	-Keyword Args Param: kwargs
+
+FFF: module: requests.packages
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.packages.adapters
+No module named adapters
+FFF: module: requests.packages.api
+No module named api
+FFF: module: requests.packages.auth
+No module named auth
+FFF: module: requests.packages.certs
+No module named certs
+FFF: module: requests.packages.compat
+No module named compat
+FFF: module: requests.packages.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.packages.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.packages.hooks
+No module named hooks
+FFF: module: requests.packages.logging
+No module named logging
+FFF: module: requests.packages.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.packages.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.packages.sessions
+No module named sessions
+FFF: module: requests.packages.status_codes
+No module named status_codes
+FFF: module: requests.packages.structures
+No module named structures
+FFF: module: requests.packages.utils
+No module named utils
+     +Function: patch
+     	-Method Arguments: ['url', 'data']
+     	--Default arguments: [('data', None)]
+     	-Keyword Args Param: kwargs
+
+     +Function: post
+     	-Method Arguments: ['url', 'data', 'json']
+     	--Default arguments: [('data', None), ('json', None)]
+     	-Keyword Args Param: kwargs
+
+     +Function: put
+     	-Method Arguments: ['url', 'data']
+     	--Default arguments: [('data', None)]
+     	-Keyword Args Param: kwargs
+
+     +Function: request
+     	-Method Arguments: ['method', 'url']
+     	-Keyword Args Param: kwargs
+
+     +Function: session
+
+FFF: module: requests.sessions
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.sessions.adapters
+No module named adapters
+FFF: module: requests.sessions.api
+No module named api
+FFF: module: requests.sessions.auth
+No module named auth
+FFF: module: requests.sessions.certs
+No module named certs
+FFF: module: requests.sessions.compat
+No module named compat
+FFF: module: requests.sessions.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.sessions.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.sessions.hooks
+No module named hooks
+FFF: module: requests.sessions.logging
+No module named logging
+FFF: module: requests.sessions.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.sessions.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.sessions.sessions
+No module named sessions
+FFF: module: requests.sessions.status_codes
+No module named status_codes
+FFF: module: requests.sessions.structures
+No module named structures
+FFF: module: requests.sessions.utils
+No module named utils
+FFF: module: requests.status_codes
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.status_codes.adapters
+No module named adapters
+FFF: module: requests.status_codes.api
+No module named api
+FFF: module: requests.status_codes.auth
+No module named auth
+FFF: module: requests.status_codes.certs
+No module named certs
+FFF: module: requests.status_codes.compat
+No module named compat
+FFF: module: requests.status_codes.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.status_codes.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.status_codes.hooks
+No module named hooks
+FFF: module: requests.status_codes.logging
+No module named logging
+FFF: module: requests.status_codes.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.status_codes.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.status_codes.sessions
+No module named sessions
+FFF: module: requests.status_codes.status_codes
+No module named status_codes
+FFF: module: requests.status_codes.structures
+No module named structures
+FFF: module: requests.status_codes.utils
+No module named utils
+FFF: module: requests.structures
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.structures.adapters
+No module named adapters
+FFF: module: requests.structures.api
+No module named api
+FFF: module: requests.structures.auth
+No module named auth
+FFF: module: requests.structures.certs
+No module named certs
+FFF: module: requests.structures.compat
+No module named compat
+FFF: module: requests.structures.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.structures.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.structures.hooks
+No module named hooks
+FFF: module: requests.structures.logging
+No module named logging
+FFF: module: requests.structures.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.structures.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.structures.sessions
+No module named sessions
+FFF: module: requests.structures.status_codes
+No module named status_codes
+FFF: module: requests.structures.structures
+No module named structures
+FFF: module: requests.structures.utils
+No module named utils
+FFF: module: requests.utils
+     [Module: requests]
+
+         +Class: ConnectionError
+             (No members)
+
+         +Class: HTTPError
+             (No members)
+
+         +Class: NullHandler
+             +Method: createLock
+             	createLock is an instance method
+             	-Method Arguments: []
+
+             +Method: handle
+             	handle is an instance method
+             	-Method Arguments: ['record']
+
+             +Method: emit
+             	emit is an instance method
+             	-Method Arguments: ['record']
+
+
+         +Class: PreparedRequest
+             +Method: prepare_method
+             	prepare_method is an instance method
+             	-Method Arguments: ['method']
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare_body
+             	prepare_body is an instance method
+             	-Method Arguments: ['data', 'files', 'json']
+             	--Default arguments: [('json', None)]
+
+             +Method: prepare_hooks
+             	prepare_hooks is an instance method
+             	-Method Arguments: ['hooks']
+
+             +Method: prepare_cookies
+             	prepare_cookies is an instance method
+             	-Method Arguments: ['cookies']
+
+             +Method: prepare_url
+             	prepare_url is an instance method
+             	-Method Arguments: ['url', 'params']
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_auth
+             	prepare_auth is an instance method
+             	-Method Arguments: ['auth', 'url']
+             	--Default arguments: [('url', '')]
+
+             +Method: copy
+             	copy is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_content_length
+             	prepare_content_length is an instance method
+             	-Method Arguments: ['body']
+
+             +Method: prepare_headers
+             	prepare_headers is an instance method
+             	-Method Arguments: ['headers']
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Request
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: ['method', 'url', 'headers', 'files', 'data', 'params', 'auth', 'cookies', 'hooks', 'json']
+             	--Default arguments: [('method', None), ('url', None), ('headers', None), ('files', None), ('data', None), ('params', None), ('auth', None), ('cookies', None), ('hooks', None), ('json', None)]
+
+             +Method: prepare
+             	prepare is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: RequestException
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Response
+             +Method: __nonzero__
+             	__nonzero__ is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_content
+             	iter_content is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode']
+             	--Default arguments: [('chunk_size', 1), ('decode_unicode', False)]
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: __iter__
+             	__iter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __bool__
+             	__bool__ is an instance method
+             	-Method Arguments: []
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: iter_lines
+             	iter_lines is an instance method
+             	-Method Arguments: ['chunk_size', 'decode_unicode', 'delimiter']
+             	--Default arguments: [('chunk_size', 512), ('decode_unicode', None), ('delimiter', None)]
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: json
+             	json is an instance method
+             	-Method Arguments: []
+             	-Keyword Args Param: kwargs
+
+             +Method: raise_for_status
+             	raise_for_status is an instance method
+             	-Method Arguments: []
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: __repr__
+             	__repr__ is an instance method
+             	-Method Arguments: []
+
+
+         +Class: Session
+             +Method: __exit__
+             	__exit__ is an instance method
+             	-Method Arguments: []
+             	-Positional Args Param: args
+
+             +Method: __setstate__
+             	__setstate__ is an instance method
+             	-Method Arguments: ['state']
+
+             +Method: head
+             	head is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: put
+             	put is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: close
+             	close is an instance method
+             	-Method Arguments: []
+
+             +Method: post
+             	post is an instance method
+             	-Method Arguments: ['url', 'data', 'json']
+             	--Default arguments: [('data', None), ('json', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: __init__
+             	__init__ is an instance method
+             	-Method Arguments: []
+
+             +Method: prepare_request
+             	prepare_request is an instance method
+             	-Method Arguments: ['request']
+
+             +Method: get_adapter
+             	get_adapter is an instance method
+             	-Method Arguments: ['url']
+
+             +Method: mount
+             	mount is an instance method
+             	-Method Arguments: ['prefix', 'adapter']
+
+             +Method: __enter__
+             	__enter__ is an instance method
+             	-Method Arguments: []
+
+             +Method: request
+             	request is an instance method
+             	-Method Arguments: ['method', 'url', 'params', 'data', 'headers', 'cookies', 'files', 'auth', 'timeout', 'allow_redirects', 'proxies', 'hooks', 'stream', 'verify', 'cert', 'json']
+             	--Default arguments: [('params', None), ('data', None), ('headers', None), ('cookies', None), ('files', None), ('auth', None), ('timeout', None), ('allow_redirects', True), ('proxies', None), ('hooks', None), ('stream', None), ('verify', None), ('cert', None), ('json', None)]
+
+             +Method: send
+             	send is an instance method
+             	-Method Arguments: ['request']
+             	-Keyword Args Param: kwargs
+
+             +Method: patch
+             	patch is an instance method
+             	-Method Arguments: ['url', 'data']
+             	--Default arguments: [('data', None)]
+             	-Keyword Args Param: kwargs
+
+             +Method: merge_environment_settings
+             	merge_environment_settings is an instance method
+             	-Method Arguments: ['url', 'proxies', 'stream', 'verify', 'cert']
+
+             +Method: options
+             	options is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: get
+             	get is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+             +Method: __getstate__
+             	__getstate__ is an instance method
+             	-Method Arguments: []
+
+             +Method: delete
+             	delete is an instance method
+             	-Method Arguments: ['url']
+             	-Keyword Args Param: kwargs
+
+
+         +Class: Timeout
+             (No members)
+
+         +Class: TooManyRedirects
+             (No members)
+
+         +Class: URLRequired
+             (No members)
+
+FFF: module: requests.utils.adapters
+No module named adapters
+FFF: module: requests.utils.api
+No module named api
+FFF: module: requests.utils.auth
+No module named auth
+FFF: module: requests.utils.certs
+No module named certs
+FFF: module: requests.utils.compat
+No module named compat
+FFF: module: requests.utils.cookies
+No module named cookies
+         +Function: delete
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.utils.exceptions
+No module named exceptions
+         +Function: get
+         	-Method Arguments: ['url', 'params']
+         	--Default arguments: [('params', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: head
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.utils.hooks
+No module named hooks
+FFF: module: requests.utils.logging
+No module named logging
+FFF: module: requests.utils.models
+No module named models
+         +Function: options
+         	-Method Arguments: ['url']
+         	-Keyword Args Param: kwargs
+
+FFF: module: requests.utils.packages
+No module named packages
+         +Function: patch
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: post
+         	-Method Arguments: ['url', 'data', 'json']
+         	--Default arguments: [('data', None), ('json', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: put
+         	-Method Arguments: ['url', 'data']
+         	--Default arguments: [('data', None)]
+         	-Keyword Args Param: kwargs
+
+         +Function: request
+         	-Method Arguments: ['method', 'url']
+         	-Keyword Args Param: kwargs
+
+         +Function: session
+
+FFF: module: requests.utils.sessions
+No module named sessions
+FFF: module: requests.utils.status_codes
+No module named status_codes
+FFF: module: requests.utils.structures
+No module named structures
+FFF: module: requests.utils.utils
+No module named utils
